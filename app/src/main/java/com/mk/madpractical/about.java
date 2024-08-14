@@ -40,7 +40,7 @@ public class about extends AppCompatActivity {
         source.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://codewithmk.site";
+                String url = "https://github.com/MakwanaMohit/MAD-Practical";
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 startActivity(intent);
