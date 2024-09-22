@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +19,53 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADPractical"
         tools:targetApi="31">
+        <service
+            android:name=".Practical11Service"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <activity
+            android:name=".Practical11"
+            android:exported="false" />
+        <activity
+            android:name=".Practical10"
+            android:exported="false" />
+        <activity
+            android:name=".Practical9"
+            android:exported="false"
+            android:label="@string/title_activity_practical9"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".Practical5"
+            android:exported="false" />
+        <activity
+            android:name=".Practical4"
+            android:exported="false" />
+        <activity
+            android:name=".Practical8"
+            android:exported="false"
+            android:label="@string/title_activity_practical8"
+            android:theme="@style/Theme.MADPractical.NoActionBar" />
+        <activity
+            android:name=".Practical7"
+            android:exported="false" />
+        <activity
+            android:name=".Practical6"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <activity
+            android:name=".ViewData"
+            android:exported="false" />
+        <activity
+            android:name=".Scanner"
+            android:exported="false" />
+        <activity
+            android:name=".MicroProject"
+            android:exported="false" />
         <activity
             android:name=".about"
             android:exported="false" />
